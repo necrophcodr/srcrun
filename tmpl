@@ -1,5 +1,4 @@
 #!/bin/sh
 
 APP="$0"
-
-tcc -Wall -Werror $CFLAGS $LDFLAGS src/$APP.c
+tcc -g -Wall -Werror $CFLAGS $LDFLAGS -run src/${APP}.c $@
